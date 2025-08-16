@@ -1,0 +1,139 @@
+:root {
+    --background-color: #f7ebf1;
+}
+
+body {
+    font-family: 'Inter';
+    text-align: center;
+    max-width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    font-size: 20px;
+    background-color: var(--background-color);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.intro_text{
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.airport_security_bin {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+    animation-delay: 1.0s;
+}
+
+.bin_background {
+    width: 100%;
+    height: auto;
+    display: block;
+    animation-delay: 1.5s;
+    animation: shake 1s linear;
+    animation-iteration-count: 2;
+}
+
+.my_essentials {
+    position: absolute;
+    animation: shake 1s ease-in-out;
+    animation-delay: 1.5s;
+    animation-iteration-count: 2;
+    transition: transform 0.3s ease-in-out; 
+}
+
+@keyframes shake {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    40% { transform: translate(-8px, -8px) rotate(-2deg); }
+    60% { transform: translate(8px, 8px) rotate(0deg); }
+    80% { transform: translate(8px, -8px) rotate(2deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+.my_essentials:hover {
+    transform: scale(1.05);
+}
+
+#matcha {
+    top: 14%;
+    left: 8%; 
+}
+
+#headphones {
+    top: 23%;
+    left: 33%; 
+}
+
+#wallet {
+    top: 20%;
+    left: 60%; 
+}
+
+#sneakers {
+    top: 53%;
+    left: 42%; 
+}
+
+#lip {
+    top: 56%;
+    left: 30%;
+}
+
+#matcha, #headphones {
+    height: 40%;
+    animation-delay: 0s;
+}
+
+#wallet, #sneakers {
+    height: 25%;
+    animation-delay: 0.2s;
+}
+
+#lip {
+    height: 15%;
+    animation-delay: 0.1s;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 20;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.sticky-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 10px 20px;
+  font-size: 14px;
+}

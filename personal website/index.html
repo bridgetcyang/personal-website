@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Bridget Yang's Personal Website</title>
+    <meta charset="utf-8">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <div class="intro_text">
+        <h1>Hi, my name is Bridget 채린 Yang!</h1>
+        <p>
+            I'm a software engineer who recently graduated from Caltech with a BS in Computation and Neural Systems (CNS)👩🏻‍🔬👩🏻‍💻🧠 
+            I love to travel; come see what's inside my airport security bin!
+        </p>
+      </div>
+      <div class="airport_security_bin">
+        <img src="imgs/purse.png" alt="Pink Balenciaga city bag" class="bin_background" id="binImage">
+        <script>
+            window.addEventListener('DOMContentLoaded', function() {
+                var binImage = document.getElementById('binImage');
+                binImage.style.marginTop = '-150px';
+                setTimeout(function() {
+                binImage.src = 'imgs/airport bin.png';
+                binImage.alt = 'Airport security bin';
+                binImage.style.marginTop = '0px';
+                }, 4000);
+            });
+        </script>
+
+        <div class="image-container">
+            <a target="_blank" href="https://www.beliapp.co/lists/bridgetyang?sh=vppBCCKHrDb">
+            <img id="matcha" class="my_essentials" src="imgs/strawberry matcha.png" alt="strawberry matcha">
+            <div class="overlay">Beli</div>
+            </a>
+        </div>
+
+        <div class="image-container">
+            <a target="_blank" href="https://github.com/thebridgetyang">
+            <img id="lip" class="my_essentials" src="imgs/lip oil.png" alt="Clarins lip oil">
+            <div class="overlay">Github</div>
+            </a>
+        </div>
+
+        <div class="image-container">
+            <a target="_blank" href="https://www.pinterest.com/bridgonce/">
+            <img id="wallet" class="my_essentials" src="imgs/celine wallet.png" alt="Celine wallet">
+            <div class="overlay">Pinterest</div>
+            </a>
+        </div>
+
+        <div class="image-container">
+            <a href="August 2025 Resume.pdf" download>
+            <img id="headphones" class="my_essentials" src="imgs/headphones.png" alt="Sony headphones">
+            <div class="overlay">My Resume</div>
+            </a>
+        </div>
+
+        <div class="image-container">
+            <a target="_blank" href="https://www.linkedin.com/in/bridget-yang-56ba08198/">
+            <img id="sneakers" class="my_essentials" src="imgs/sneakers.png" alt="Puma Speedcats">
+            <div class="overlay">Linkedin</div>
+            </a>
+        </div>
+
+      </div>
+    </main>
+    <footer class="sticky-footer">
+        <p>Bridget Yang &copy; 2025</p>
+    </footer>
+  </body>
+</html>
