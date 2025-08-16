@@ -51,9 +51,9 @@ h1 {
 
 .my_essentials {
     position: absolute;
-    animation: shake 1s ease-in-out;
-    animation-delay: 1.5s;
-    animation-iteration-count: 2;
+    animation: fadeIn 1s ease-in forwards, shake 1s ease-in-out;
+    animation-delay: 1.5s, 0s;
+    animation-iteration-count: 2, 1;
     transition: transform 0.3s ease-in-out; 
 }
 
